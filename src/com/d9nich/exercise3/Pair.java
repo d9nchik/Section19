@@ -16,4 +16,10 @@ public class Pair<E> {
     public E getPair2() {
         return pair2;
     }
+
+    public static <E extends Comparable<E>> E min(Pair<E> pair) {
+        if (pair.pair1.compareTo(pair.pair2) < 0)
+            return pair.pair1;
+        return pair.pair2;
+    }
 }
