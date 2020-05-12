@@ -22,4 +22,8 @@ public class Transition<E1, E2, E3> {
     public E3 getThird() {
         return third;
     }
+
+    public static double sum(Transition<? extends Number, ? extends Number, ? extends Number> transition) {
+        return transition.first.doubleValue() + transition.second.doubleValue() + transition.third.doubleValue();
+    }
 }
