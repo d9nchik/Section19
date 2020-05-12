@@ -19,8 +19,8 @@ public class ShuffleArray {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 10; i++)
             list.add(random.nextInt());
-        sort(list);
         System.out.println(list);
+        System.out.println(min(list));
     }
 
     public static <E extends Comparable<E>> void sort(ArrayList<E> list) {
@@ -33,5 +33,14 @@ public class ShuffleArray {
             }
             list.set(position, maximum);
         }
+    }
+
+    public static <E extends Comparable<E>> E min(ArrayList<E> list) {
+        E min = list.get(0);
+        for (int i = 1; i < list.size(); i++) {
+            if (min.compareTo(list.get(i)) > 0)
+                min = list.get(i);
+        }
+        return min;
     }
 }
