@@ -1,4 +1,4 @@
-package com.d9nich.exercise10;
+package com.d9nich.exercise11;
 
 public abstract class GenericMatrix<E extends Number> {
     public static void printResult(

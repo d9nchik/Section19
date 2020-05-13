@@ -1,4 +1,4 @@
-package com.d9nich.exercise10;
+package com.d9nich.exercise11;
 
 public class ComplexMatrix extends GenericMatrix<Complex> {
 
